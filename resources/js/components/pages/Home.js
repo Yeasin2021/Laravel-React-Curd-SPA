@@ -11,8 +11,11 @@ useEffect(()=>{
 
         // this function is make API
         const getAllUsers = async () =>{
-        const response = await axios.get("contact").then((result)=>{console.log(resutl)});
-        setUser(response.data);
+        const response = await axios.get("contact").then((result)=>{
+            //console.log(result)
+            setUser(result.data.contacts);
+        });
+        // setUser(response.data);
         //console.log(response.data);
       };
 
@@ -28,11 +31,11 @@ useEffect(()=>{
 
     return (
     <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm"></div>
-                <div class="col-md-8">
-                    <table class="table table-striped">
+        <div className="container">
+            <div className="row">
+                <div className="col-sm"></div>
+                <div className="col-md-8">
+                    <table className="table table-striped">
                         <thead>
                             <tr>
                                 <th scope="col">ID.No</th>
@@ -41,7 +44,7 @@ useEffect(()=>{
                         </thead>
                         <tbody>
                             {/* {console.log(users)} */}
-                        {/* {
+                        {
                             users.map((user)=>{
                             return(
                                 <tr className='headlineText'>
@@ -50,12 +53,12 @@ useEffect(()=>{
                                 </tr>
                             )
                             })
-                        } */}
+                        }
 
                         </tbody>
                     </table>
                 </div>
-                <div class="col-sm"></div>
+                <div className="col-sm"></div>
             </div>
         </div>
     </div>

@@ -8880,13 +8880,12 @@ var Home = function Home() {
                 case 0:
                   _context.next = 2;
                   return axios__WEBPACK_IMPORTED_MODULE_1___default().get("contact").then(function (result) {
-                    console.log(resutl);
+                    //console.log(result)
+                    setUser(result.data.contacts);
                   });
                 case 2:
                   response = _context.sent;
-                  setUser(response.data);
-                  //console.log(response.data);
-                case 4:
+                case 3:
                 case "end":
                   return _context.stop();
               }
@@ -8904,15 +8903,15 @@ var Home = function Home() {
   });
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      "class": "container",
+      className: "container",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        "class": "row",
+        className: "row",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-          "class": "col-sm"
+          className: "col-sm"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-          "class": "col-md-8",
+          className: "col-md-8",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("table", {
-            "class": "table table-striped",
+            className: "table table-striped",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("thead", {
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
@@ -8923,10 +8922,22 @@ var Home = function Home() {
                   children: "Name"
                 })]
               })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("tbody", {})]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("tbody", {
+              children: users.map(function (user) {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
+                  className: "headlineText",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+                    scope: "row",
+                    children: user.id
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+                    children: user.name
+                  })]
+                });
+              })
+            })]
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-          "class": "col-sm"
+          className: "col-sm"
         })]
       })
     })
