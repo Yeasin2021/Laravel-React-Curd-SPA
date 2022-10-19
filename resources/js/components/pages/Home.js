@@ -55,11 +55,11 @@ useEffect(()=>{
                                 <th scope="row">{user.id}</th>
                                 <td>{user.name}</td>
                                 <td>
-                                    <Link to={`/edit/${user.id}`}>
-                                    <button className='btn btn-primary mr-2'>Edit</button>
+                                    <Link to={`/contact/${user.id}`}>
+                                        <button className='btn btn-primary mr-2'>Edit</button>
                                     </Link>
 
-                                    <button onClick={()=> deleteUser(user.id)} className='btn btn-danger'>Delete</button>
+                                       <button onClick={()=> deleteUser(user.id)} className='btn btn-danger'>Delete</button>
 
                                 </td>
 

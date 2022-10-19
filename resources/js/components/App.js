@@ -4,6 +4,7 @@ import { BrowserRouter , Routes , Route, Link } from "react-router-dom";
 import '../../css/app.css';
 
 import Home from  './pages/Home';
+import Edit from  './pages/Edit';
 import Nav from './Nav';
 import FormData from './Form';
 
@@ -16,6 +17,7 @@ function App() {
                 <Routes>
                     <Route path='/' element={ <Home /> } />
                     <Route path='/contact' element={ <FormData /> } />
+                    <Route path='/contact/:id' element={ <Edit /> } />
                 </Routes>
             </BrowserRouter>
         </>
