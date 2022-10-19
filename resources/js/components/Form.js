@@ -4,6 +4,7 @@ import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import "../../css/app.css";
 
 const Form = () => {
 const  navigate = useNavigate();
@@ -28,6 +29,7 @@ return (
         <div className="container">
             <div className="row">
                 <div className="col-md-4">
+                    <h1 className='clr'>Form Design </h1>
                     <form onSubmit={storeData}>
                         <div className="form-group">
                             <label htmlFor="exampleInputPhone">Name</label>
