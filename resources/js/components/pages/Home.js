@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState, } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 const Home = () => {
@@ -38,18 +39,30 @@ useEffect(()=>{
                     <table className="table table-striped">
                         <thead>
                             <tr>
-                                <th scope="col">ID.No</th>
+                                <th scope="col">Serial No.</th>
+                                <th scope="col">User Id.</th>
                                 <th scope="col">Name</th>
+                                <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             {/* {console.log(users)} */}
                         {
-                            users.map((user)=>{
+                            users.map((user,i)=>{
                             return(
-                                <tr className='headlineText'>
+                                <tr className='headlineText' key={i}>
+                                <th scope="row">{++i}</th>
                                 <th scope="row">{user.id}</th>
                                 <td>{user.name}</td>
+                                <td>
+                                    <Link to={`/edit/${user.id}`}>
+                                    <button className='btn btn-primary mr-2'>Edit</button>
+                                    </Link>
+
+                                    <button onClick={()=> deleteUser(user.id)} className='btn btn-danger'>Delete</button>
+
+                                </td>
+
                                 </tr>
                             )
                             })
