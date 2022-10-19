@@ -15,8 +15,9 @@ const Edit = () => {
             try{
 
                 const getSingleRecord = async () =>{
-                const response = await axios.get(`/contact/${id}`);
-                setInput(response.data);
+                const response = await axios.get(`/contact/${id}/edit`);
+                // console.log(response.data.contact.name)
+                setInput(response.data.contact);
 
 
               };
