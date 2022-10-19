@@ -9041,6 +9041,32 @@ var Home = function Home() {
       console.log(error);
     }
   });
+  var deleteUser = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(id) {
+      var newUsers;
+      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              _context2.next = 2;
+              return axios__WEBPACK_IMPORTED_MODULE_1___default()["delete"]("/contact/".concat(id));
+            case 2:
+              //  show all data without deleted  data
+              newUsers = users.filter(function (user) {
+                return user.id !== id;
+              });
+              setUser(newUsers);
+            case 4:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2);
+    }));
+    return function deleteUser(_x) {
+      return _ref2.apply(this, arguments);
+    };
+  }();
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
       className: "container",

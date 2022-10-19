@@ -28,6 +28,15 @@ useEffect(()=>{
 
 });
 
+const deleteUser = async (id) =>{
+    await axios.delete(`/contact/${id}`);
+   //  show all data without deleted  data
+    const newUsers = users.filter((user)=>{
+      return user.id !== id;
+    });
+    setUser(newUsers);
+  }
+
 
 
     return (
