@@ -31,7 +31,7 @@ const Edit = () => {
 
         const updateUser = async (e) =>{
             e.preventDefault();
-            await axios.put(`http://localhost:8000/users/${id}`,input);
+            await axios.put(`/contact/${id}`,input);
             navigate("/");
         }
 
