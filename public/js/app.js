@@ -8925,7 +8925,7 @@ var Edit = function Edit() {
               _context2.next = 3;
               return axios__WEBPACK_IMPORTED_MODULE_1___default().put("/contact/".concat(id), input);
             case 3:
-              navigate("/");
+              navigate("/home");
             case 4:
             case "end":
               return _context2.stop();

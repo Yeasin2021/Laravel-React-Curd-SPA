@@ -32,7 +32,7 @@ const Edit = () => {
         const updateUser = async (e) =>{
             e.preventDefault();
             await axios.put(`/contact/${id}`,input);
-            navigate("/");
+            navigate("/home");
         }
 
   return (
