@@ -10,14 +10,13 @@ const [users, setUser] = useState([]);
 useEffect(()=>{
     try{
 
-        // this function is make API
+
         const getAllUsers = async () =>{
         const response = await axios.get("contact").then((result)=>{
-            //console.log(result)
+
             setUser(result.data.contacts);
         });
-        // setUser(response.data);
-        //console.log(response.data);
+
       };
 
       getAllUsers();
@@ -30,7 +29,6 @@ useEffect(()=>{
 
 const deleteUser = async (id) =>{
     await axios.delete(`/contact/${id}`);
-   //  show all data without deleted  data
     const newUsers = users.filter((user)=>{
       return user.id !== id;
     });
@@ -55,7 +53,6 @@ const deleteUser = async (id) =>{
                             </tr>
                         </thead>
                         <tbody>
-                            {/* {console.log(users)} */}
                         {
                             users.map((user,i)=>{
                             return(

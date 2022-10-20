@@ -7,15 +7,18 @@ import Home from  './pages/Home';
 import Edit from  './pages/Edit';
 import Nav from './Nav';
 import FormData from './Form';
+import Sidebar from './pages/Sidebar';
 
 function App() {
     return (
         <>
 
             <BrowserRouter>
-            <Nav />
+            {/* <Nav /> */}
+            <Sidebar />
                 <Routes>
-                    <Route path='/' element={ <Home /> } />
+                    <Route path='/home' element={ <Home /> } />
+                    {/* <Route path='/' element={ <Sidebar /> } /> */}
                     <Route path='/contact' element={ <FormData /> } />
                     <Route path='/contact/:id' element={ <Edit /> } />
                 </Routes>

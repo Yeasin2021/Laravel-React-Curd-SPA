@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menubar{
+    background: aqua;
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    box-shadow: 0 0 20px #d4d4d4;
+    cursor: pointer;
+    transition: .4s;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.menubar:hover{
+    width: 280px;
+    overflow-y: scroll;
+}
+
+.menubar li{
+    padding: 5px;
+}
+
+.menubar li:hover{
+    background: #d4d4d4;
+}
+
+.menubar li i{
+    color: gray;
+    width: 91px;
+    padding: 10px;
+    font-size: 25px;
+
+
+}
