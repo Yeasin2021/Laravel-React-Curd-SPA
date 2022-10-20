@@ -9157,7 +9157,7 @@ __webpack_require__.r(__webpack_exports__);
 var Sidebar = function Sidebar() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      "class": "menubar",
+      className: "menubar",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
         style: {
           listStyle: "none"
@@ -14477,7 +14477,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*{\n    margin: 0;\n    padding: 0;\n}\n\n.menubar{\n    background: aqua;\n    height: 100%;\n    width: 70px;\n    position: fixed;\n    top: 0;\n    left: 0;\n    overflow-x: hidden;\n    overflow-y: hidden;\n    white-space: nowrap;\n    box-shadow: 0 0 20px #d4d4d4;\n    cursor: pointer;\n    transition: .4s;\n    border-bottom-right-radius: 10px;\n    border-bottom-left-radius: 10px;\n}\n\n.menubar:hover{\n    width: 280px;\n    overflow-y: scroll;\n}\n\n.menubar li{\n    padding: 5px;\n}\n\n.menubar li:hover{\n    background: #d4d4d4;\n}\n\n.menubar li i{\n    color: gray;\n    width: 91px;\n    padding: 10px;\n    font-size: 25px;\n\n\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "*{\n    margin: 0;\n    padding: 0;\n}\n\n.menubar{\n    background: aqua;\n    height: 100%;\n    width: 300px;\n    position: fixed;\n    top: 0;\n    left: 0;\n    overflow-x: hidden;\n    /* overflow-y: hidden; */\n    white-space: nowrap;\n    box-shadow: 0 0 20px #d4d4d4;\n    cursor: pointer;\n    transition: .4s;\n    border-bottom-right-radius: 10px;\n    border-bottom-left-radius: 10px;\n    overflow-y: scroll;\n}\n\n/* .menubar:hover{\n    width: 280px;\n    overflow-y: scroll;\n} */\n\n.menubar li{\n    padding: 5px;\n}\n\n.menubar li:hover{\n    background: #d4d4d4;\n}\n\n.menubar li i{\n    color: gray;\n    width: 91px;\n    padding: 10px;\n    font-size: 25px;\n\n\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

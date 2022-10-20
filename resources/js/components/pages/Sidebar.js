@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Sidebar = () => {
   return (
     <div>
-        <div class="menubar">
+        <div className="menubar">
         <ul style={{listStyle: "none"}}>
             <li><Link to="/home" style={{textDecoration: "none"}}><i class="fa fa-home"></i>Home</Link></li>
             <li><i class="fa fa-bell"></i>Notification</li>

@@ -6,24 +6,25 @@
 .menubar{
     background: aqua;
     height: 100%;
-    width: 70px;
+    width: 300px;
     position: fixed;
     top: 0;
     left: 0;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     white-space: nowrap;
     box-shadow: 0 0 20px #d4d4d4;
     cursor: pointer;
     transition: .4s;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-}
-
-.menubar:hover{
-    width: 280px;
     overflow-y: scroll;
 }
+
+/* .menubar:hover{
+    width: 280px;
+    overflow-y: scroll;
+} */
 
 .menubar li{
     padding: 5px;
