@@ -4,9 +4,14 @@ import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import "../../css/app.css";
 
+
+
 const Form = () => {
+
 const  navigate = useNavigate();
 // Data add by hooks
 const [input, setInput] = useState(
@@ -20,13 +25,20 @@ const storeData = async (e)=>{
     e.preventDefault();
     const res = await axios.post("contact",input);
     // console.log(res);
-    navigate("/");
+    toast.success("Data added Successfully !!!");
+    navigate("/home");
 
+
+  }
+
+  const notify = () => {
+    toast("Default Notification !");
   }
 
 return (
     <div>
         <div className="container">
+        <ToastContainer />
             <div className="row">
                 <div className="col-md-4 mx-auto">
                     <h1 className='clr'>Form </h1>
@@ -37,10 +49,15 @@ return (
 
                         </div>
 
+
                         <button type="submit" className="btn btn-primary">Submit</button>
+
+
                     </form>
+
                 </div>
             </div>
+
         </div>
 
     </div>

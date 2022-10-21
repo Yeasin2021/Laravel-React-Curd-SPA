@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 const Edit = () => {
     const {id} = useParams();
@@ -32,11 +34,13 @@ const Edit = () => {
         const updateUser = async (e) =>{
             e.preventDefault();
             await axios.put(`/contact/${id}`,input);
+            toast.info("Data Updated !!");
             navigate("/home");
         }
 
   return (
     <div class="container">
+        <ToastContainer/>
         <div class="row">
           <div class="col-md-6">
             <form onSubmit={updateUser}>

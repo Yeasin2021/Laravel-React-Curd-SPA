@@ -9,18 +9,26 @@ import Nav from './Nav';
 import FormData from './Form';
 import Sidebar from './pages/Sidebar';
 
+// import Toastr from '../components/pages/Toastr';
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
+
+
 function App() {
     return (
         <>
-
+        <ToastContainer/>
             <BrowserRouter>
             {/* <Nav /> */}
+
             <Sidebar />
                 <Routes>
                     <Route path='/home' element={ <Home /> } />
                     {/* <Route path='/' element={ <Sidebar /> } /> */}
                     <Route path='/contact' element={ <FormData /> } />
                     <Route path='/contact/:id' element={ <Edit /> } />
+                    {/* <Route path='/toastr' element={ <Toastr /> } /> */}
                 </Routes>
             </BrowserRouter>
         </>

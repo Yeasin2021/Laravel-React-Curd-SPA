@@ -2,6 +2,8 @@ import React from 'react';
 import { useEffect, useState, } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 const Home = () => {
 
@@ -32,6 +34,7 @@ const deleteUser = async (id) =>{
     const newUsers = users.filter((user)=>{
       return user.id !== id;
     });
+    toast.warning("Data Deleted Successfully");
     setUser(newUsers);
   }
 
@@ -40,6 +43,7 @@ const deleteUser = async (id) =>{
     return (
     <div>
         <div className="container">
+        <ToastContainer />
             <div className="row">
                 <div className="col-sm"></div>
                 <div className="col-md-8">
@@ -65,7 +69,7 @@ const deleteUser = async (id) =>{
                                         <button className='btn btn-primary mr-2'>Edit</button>
                                     </Link>
 
-                                       <button onClick={()=> deleteUser(user.id)} className='btn btn-danger'>Delete</button>
+                                       <button onClick={()=> {deleteUser(user.id);}} className='btn btn-danger'>Delete</button>
 
                                 </td>
 
