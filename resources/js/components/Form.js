@@ -29,7 +29,7 @@ return (
         <div className="container">
             <div className="row">
                 <div className="col-md-4 mx-auto">
-                    <h1 className='clr'>Form Design </h1>
+                    <h1 className='clr'>Form </h1>
                     <form onSubmit={storeData}>
                         <div className="form-group">
                             <label htmlFor="exampleInputPhone">Name</label>
