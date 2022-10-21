@@ -28,7 +28,7 @@ return (
     <div>
         <div className="container">
             <div className="row">
-                <div className="col-md-4">
+                <div className="col-md-4 mx-auto">
                     <h1 className='clr'>Form Design </h1>
                     <form onSubmit={storeData}>
                         <div className="form-group">
@@ -42,8 +42,8 @@ return (
                 </div>
             </div>
         </div>
-    </div>
 
+    </div>
     ) }
 
 
