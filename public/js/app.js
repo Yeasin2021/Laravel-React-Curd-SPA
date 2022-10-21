@@ -9172,10 +9172,16 @@ var Sidebar = function Sidebar() {
               "class": "fa fa-home"
             }), "Home"]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("li", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
-            "class": "fa fa-bell"
-          }), "Notification"]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+            to: "/contact",
+            style: {
+              textDecoration: "none"
+            },
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
+              "class": "fa fa-bell"
+            }), "Form"]
+          })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("li", {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
             "class": "fa fa-paper-plane"
@@ -14477,7 +14483,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*{\n    margin: 0;\n    padding: 0;\n}\n\n.menubar{\n    background: aqua;\n    height: 100%;\n    width: 300px;\n    position: fixed;\n    top: 0;\n    left: 0;\n    overflow-x: hidden;\n    /* overflow-y: hidden; */\n    white-space: nowrap;\n    box-shadow: 0 0 20px #d4d4d4;\n    cursor: pointer;\n    transition: .4s;\n    border-bottom-right-radius: 10px;\n    border-bottom-left-radius: 10px;\n    overflow-y: scroll;\n}\n\n/* .menubar:hover{\n    width: 280px;\n    overflow-y: scroll;\n} */\n\n.menubar li{\n    padding: 5px;\n}\n\n.menubar li:hover{\n    background: #d4d4d4;\n}\n\n.menubar li i{\n    color: gray;\n    width: 91px;\n    padding: 10px;\n    font-size: 25px;\n\n\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "*{\n    margin: 0;\n    padding: 0;\n}\n\n.menubar{\n    background: aqua;\n    height: 100%;\n    width: 300px;\n    position: fixed;\n    top: 0;\n    left: 0;\n    overflow-x: hidden;\n    /* overflow-y: hidden; */\n    white-space: nowrap;\n    box-shadow: 0 0 20px #d4d4d4;\n    cursor: pointer;\n    transition: .4s;\n    border-bottom-right-radius: 10px;\n    border-bottom-left-radius: 10px;\n    overflow-y: scroll;\n}\n\n/* .menubar:hover{\n    width: 280px;\n    overflow-y: scroll;\n} */\n\n.menubar li{\n    padding: 5px;\n}\n\n.menubar li:hover{\n    background: #d4d4d4;\n}\n\n.menubar li i{\n    color: gray;\n    width: 91px;\n    padding: 10px;\n    font-size: 25px;\n\n\n}\n\n\n\n\n/* form  */\n\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
