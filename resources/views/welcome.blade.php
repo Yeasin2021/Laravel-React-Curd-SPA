@@ -13,7 +13,7 @@
     </head>
     <body class="antialiased">
        <div id="app"></div>
-       <script src="js/app.js"></script>
+       <script src={{ asset("js/app.js") }}></script>
        <script src="js/bootstrap4-jquery.js"></script>
        <script src="js/bootstrap44-jsdeliver.js"></script>
        <script src="js/bootstrap.min.js"></script>

@@ -6,7 +6,7 @@ import '../../css/app.css';
 import Home from  './pages/Home';
 import Edit from  './pages/Edit';
 import Nav from './Nav';
-import FormData from './Form';
+import Form from './Form';
 import Sidebar from './pages/Sidebar';
 
 
@@ -27,9 +27,9 @@ function App() {
             <Sidebar />
 
                 <Routes>
-                    <Route path='/home' element={ <Home /> } />
+                    <Route path='/' element={ <Home /> } />
                     {/* <Route path='/' element={ <Sidebar /> } /> */}
-                    <Route path='/contact' element={ <FormData /> } />
+                    <Route path='/contact' element={ <Form /> } />
                     <Route path='/contact/:id' element={ <Edit /> } />
                     {/* <Route path='/toastr' element={ <Toastr /> } /> */}
                 </Routes>

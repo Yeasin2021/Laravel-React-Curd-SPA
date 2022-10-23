@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useState, } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
@@ -15,7 +16,6 @@ useEffect(()=>{
 
         const getAllUsers = async () =>{
         const response = await axios.get("contact").then((result)=>{
-
             setUser(result.data.contacts);
         });
 

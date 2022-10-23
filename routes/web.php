@@ -14,9 +14,11 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::view('/{path?}', 'welcome');
 
 
 Route::resource('/contact', ContactController::class);
