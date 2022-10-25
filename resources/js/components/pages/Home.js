@@ -16,7 +16,9 @@ useEffect(()=>{
 
         const getAllUsers = async () =>{
         const response = await axios.get("contact").then((result)=>{
+            console.log(result.data.contacts);
             setUser(result.data.contacts);
+
         });
 
       };

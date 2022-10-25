@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter , Routes , Route, Link } from "react-router-dom";
+
+
 import '../../css/app.css';
 
 import Home from  './pages/Home';
@@ -17,21 +19,17 @@ import "react-toastify/dist/ReactToastify.css";
 
 
 function App() {
+
     return (
         <>
         <ToastContainer/>
-
             <BrowserRouter>
             <Nav />
-
             <Sidebar />
-
                 <Routes>
-                    <Route path='/' element={ <Home /> } />
-                    {/* <Route path='/' element={ <Sidebar /> } /> */}
-                    <Route path='/contact' element={ <Form /> } />
-                    <Route path='/contact/:id' element={ <Edit /> } />
-                    {/* <Route path='/toastr' element={ <Toastr /> } /> */}
+                    <Route  path='/' element={ <Home /> } />
+                    <Route  path='/form' element={ <Form /> } />
+                    <Route  path='/contact/:id' element={ <Edit /> } />
                 </Routes>
             </BrowserRouter>
         </>

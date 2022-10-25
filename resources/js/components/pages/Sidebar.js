@@ -8,7 +8,7 @@ const Sidebar = () => {
         <div className="menubar">
         <ul style={{listStyle: "none"}}>
             <li><Link to={"/"} style={{textDecoration: "none"}}><i class="fa fa-home"></i>Home</Link></li>
-            <li><Link to={"/contact"} style={{textDecoration: "none"}}><i class="fa fa-bell"></i>Form</Link></li>
+            <li><Link to={"/form"} style={{textDecoration: "none"}}><i class="fa fa-bell"></i>Form</Link></li>
             <li><i class="fa fa-paper-plane"></i>Message</li>
             <li><i class="fa fa-gear"></i>Setting</li>
             <li><i class="fa fa-solid fa-eye"></i>Role Permission</li>

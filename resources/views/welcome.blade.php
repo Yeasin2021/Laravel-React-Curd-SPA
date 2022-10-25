@@ -6,7 +6,9 @@
 
         <title>Laravel</title>
 
-        <link rel="stylesheet" href="css/app.css">
+        {{-- <link rel="stylesheet" href="css/app.css"> --}}
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
         <link rel="stylesheet" href="css/bootstrap4.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 

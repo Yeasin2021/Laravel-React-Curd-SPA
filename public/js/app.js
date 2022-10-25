@@ -8633,7 +8633,7 @@ function App() {
           path: "/",
           element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_pages_Home__WEBPACK_IMPORTED_MODULE_3__["default"], {})
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
-          path: "/contact",
+          path: "/form",
           element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_Form__WEBPACK_IMPORTED_MODULE_6__["default"], {})
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
           path: "/contact/:id",
@@ -8716,7 +8716,7 @@ var Form = function Form() {
               res = _context.sent;
               // console.log(res);
               react_toastify__WEBPACK_IMPORTED_MODULE_2__.toast.success("Data added Successfully !!!");
-              navigate("/home");
+              navigate("/");
             case 6:
             case "end":
               return _context.stop();
@@ -8731,6 +8731,7 @@ var Form = function Form() {
   var notify = function notify() {
     (0,react_toastify__WEBPACK_IMPORTED_MODULE_2__.toast)("Default Notification !");
   };
+  console.log(window.location.href);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: "container",
@@ -9044,6 +9045,7 @@ var Home = function Home() {
                 case 0:
                   _context.next = 2;
                   return axios__WEBPACK_IMPORTED_MODULE_1___default().get("contact").then(function (result) {
+                    console.log(result.data.contacts);
                     setUser(result.data.contacts);
                   });
                 case 2:
@@ -9198,7 +9200,7 @@ var Sidebar = function Sidebar() {
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-            to: "/contact",
+            to: "/form",
             style: {
               textDecoration: "none"
             },

@@ -26,7 +26,7 @@ const storeData = async (e)=>{
     const res = await axios.post("contact",input);
     // console.log(res);
     toast.success("Data added Successfully !!!");
-    navigate("/home");
+    navigate("/");
 
 
   }
@@ -34,6 +34,8 @@ const storeData = async (e)=>{
   const notify = () => {
     toast("Default Notification !");
   }
+
+  console.log(window.location.href);
 
 return (
     <div>
