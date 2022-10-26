@@ -8598,17 +8598,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _css_app_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/app.css */ "./resources/css/app.css");
 /* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/Home */ "./resources/js/components/pages/Home.js");
 /* harmony import */ var _pages_Edit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/Edit */ "./resources/js/components/pages/Edit.js");
 /* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Nav */ "./resources/js/components/Nav.js");
 /* harmony import */ var _Form__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Form */ "./resources/js/components/Form.js");
-/* harmony import */ var _pages_Sidebar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/Sidebar */ "./resources/js/components/pages/Sidebar.js");
-/* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-toastify */ "./node_modules/react-toastify/dist/react-toastify.esm.mjs");
-/* harmony import */ var react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-toastify/dist/ReactToastify.css */ "./node_modules/react-toastify/dist/ReactToastify.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Error404__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Error404 */ "./resources/js/components/Error404.js");
+/* harmony import */ var _pages_Sidebar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/Sidebar */ "./resources/js/components/pages/Sidebar.js");
+/* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-toastify */ "./node_modules/react-toastify/dist/react-toastify.esm.mjs");
+/* harmony import */ var react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-toastify/dist/ReactToastify.css */ "./node_modules/react-toastify/dist/ReactToastify.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -8626,18 +8628,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_toastify__WEBPACK_IMPORTED_MODULE_8__.ToastContainer, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.BrowserRouter, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_Nav__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_pages_Sidebar__WEBPACK_IMPORTED_MODULE_7__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Routes, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_toastify__WEBPACK_IMPORTED_MODULE_9__.ToastContainer, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.BrowserRouter, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Nav__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_Sidebar__WEBPACK_IMPORTED_MODULE_8__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Routes, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
           path: "/",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_pages_Home__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
+          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_Home__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
           path: "/form",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_Form__WEBPACK_IMPORTED_MODULE_6__["default"], {})
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
+          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Form__WEBPACK_IMPORTED_MODULE_6__["default"], {})
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
           path: "/contact/:id",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_pages_Edit__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_pages_Edit__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+          path: "*",
+          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_Error404__WEBPACK_IMPORTED_MODULE_7__["default"], {})
         })]
       })]
     })]
@@ -8645,8 +8650,62 @@ function App() {
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 if (document.getElementById('app')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(App, {}), document.getElementById('app'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(App, {}), document.getElementById('app'));
 }
+
+/***/ }),
+
+/***/ "./resources/js/components/Error404.js":
+/*!*********************************************!*\
+  !*** ./resources/js/components/Error404.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var _css_app_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/app.css */ "./resources/css/app.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+var Error404 = function Error404() {
+  //  window.alert("Page not Found")
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "body",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "error-page",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "content",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
+            className: "header",
+            "data-text": "404",
+            children: "404"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h4", {
+            "data-text": "Opps! Page not found",
+            children: "Opps! Page not found"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+            children: "Sorry, the page you're looking for doesn't exist. If you think something is broken, report a problem."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "btns",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+              to: '/',
+              children: "return home"
+            })
+          })]
+        })
+      })
+    })
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Error404);
 
 /***/ }),
 
@@ -14548,8 +14607,9 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*{\n    margin: 0;\n    padding: 0;\n}\n\n.menubar{\n    background: aqua;\n    height: 100%;\n    width: 300px;\n    position: fixed;\n    top: 0;\n    left: 0;\n    overflow-x: hidden;\n    /* overflow-y: hidden; */\n    white-space: nowrap;\n    box-shadow: 0 0 20px #d4d4d4;\n    cursor: pointer;\n    transition: .4s;\n    border-bottom-right-radius: 10px;\n    border-bottom-left-radius: 10px;\n    overflow-y: scroll;\n}\n\n/* .menubar:hover{\n    width: 280px;\n    overflow-y: scroll;\n} */\n\n.menubar li{\n    padding: 5px;\n}\n\n.menubar li:hover{\n    background: #d4d4d4;\n}\n\n.menubar li i{\n    color: gray;\n    width: 91px;\n    padding: 10px;\n    font-size: 25px;\n\n\n}\n\n\n/* form  */\n\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "*{\n    margin: 0;\n    padding: 0;\n}\n\n.menubar{\n    background: aqua;\n    height: 100%;\n    width: 300px;\n    position: fixed;\n    top: 0;\n    left: 0;\n    overflow-x: hidden;\n    /* overflow-y: hidden; */\n    white-space: nowrap;\n    box-shadow: 0 0 20px #d4d4d4;\n    cursor: pointer;\n    transition: .4s;\n    border-bottom-right-radius: 10px;\n    border-bottom-left-radius: 10px;\n    overflow-y: scroll;\n}\n\n/* .menubar:hover{\n    width: 280px;\n    overflow-y: scroll;\n} */\n\n.menubar li{\n    padding: 5px;\n}\n\n.menubar li:hover{\n    background: #d4d4d4;\n}\n\n.menubar li i{\n    color: gray;\n    width: 91px;\n    padding: 10px;\n    font-size: 25px;\n\n\n}\n\n\n/* form  */\n/* * {\n    margin: 0;\n    padding: 0;\n    outline: none;\n    box-sizing: border-box;\n    font-family: \"Poppins\", sans-serif;\n} */\n\n.body {\n    height: 100vh;\n    background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);\n    background-size: 100%;\n\n}\n.error-page {\n    position: absolute;\n    top: 10%;\n    left: 35%;\n    right: 15%;\n    bottom: 10%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    background: #fff;\n    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);\n}\n.error-page .content {\n    max-width: 600px;\n    text-align: center;\n}\n.content h2.header {\n    font-size: 18vw;\n    line-height: 1em;\n    position: relative;\n}\n.content h2.header:after {\n    position: absolute;\n    content: attr(data-text);\n    top: 0;\n    left: 0;\n    right: 0;\n    background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);\n    background-size: 400%;\n    -webkit-background-clip: text;\n    -webkit-text-fill-color: transparent;\n    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);\n    animation: animate 10s ease-in-out infinite;\n}\n@keyframes animate {\n    0% {\n        background-position: 0 0;\n    }\n    25% {\n        background-position: 100% 0;\n    }\n    50% {\n        background-position: 100% 100%;\n    }\n    75% {\n        background-position: 0% 100%;\n    }\n    100% {\n        background-position: 0% 0%;\n    }\n}\n.content h4 {\n    font-size: 1.5em;\n    margin-bottom: 20px;\n    text-transform: uppercase;\n    color: #000;\n    font-size: 2em;\n    max-width: 600px;\n    position: relative;\n}\n.content h4:after {\n    position: absolute;\n    content: attr(data-text);\n    top: 0;\n    left: 0;\n    right: 0;\n    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);\n    -webkit-background-clip: text;\n    -webkit-text-fill-color: transparent;\n}\n.content p {\n    font-size: 1.2em;\n    color: #0d0d0d;\n}\n.content .btns {\n    margin: 25px 0;\n    display: inline-flex;\n}\n.content .btns a {\n    display: inline-block;\n    margin: 0 10px;\n    text-decoration: none;\n    border: 2px solid #69a6ce;\n    color: #69a6ce;\n    font-weight: 500;\n    padding: 10px 25px;\n    border-radius: 25px;\n    text-transform: uppercase;\n    transition: all 0.3s ease;\n}\n.content .btns a:hover {\n    background: #69a6ce;\n    color: #fff;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -9,6 +9,7 @@ import Home from  './pages/Home';
 import Edit from  './pages/Edit';
 import Nav from './Nav';
 import Form from './Form';
+import  Error404  from './Error404';
 import Sidebar from './pages/Sidebar';
 
 
@@ -28,8 +29,10 @@ function App() {
             <Sidebar />
                 <Routes>
                     <Route  path='/' element={ <Home /> } />
+                    {/* <Route  path='/s' element={ <Home /> } /> */}
                     <Route  path='/form' element={ <Form /> } />
                     <Route  path='/contact/:id' element={ <Edit /> } />
+                    <Route  path='*' element={ <Error404 /> } />
                 </Routes>
             </BrowserRouter>
         </>
